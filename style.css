@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+    145deg,
+    rgba(0, 0, 0, 0.75),
+    rgba(20, 20, 20, 0.75)
+  );
+
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.converter-box {
+  height: 45%;
+  width: 400px;
+  background: linear-gradient(to bottom, rgba(9, 23, 49, 0.658), #0a1c44ad);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+header {
+  height: 30px;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+header h1 {
+  font-size: 1rem;
+}
+
+section.converter {
+  height: 150px;
+  margin-top: 50px;
+}
+
+.converter {
+  padding: 10px;
+}
+
+.converter .binary {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.converter .binary input {
+  height: 30px;
+  width: 170px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 0.1rem solid #f4f4f4;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.converter .binary p {
+  font-size: 1.4rem;
+}
+
+.converter .decimal {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.converter .decimal .dec-display {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.converter .decimal p.name-2 {
+  font-size: 1.4rem;
+}
+
+p.warning {
+  font-size: 0.7rem;
+  color: #fff;
+  font-style: italic;
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .converter-box {
+    width: 330px;
+  }
+
+  p.warning {
+    position: relative;
+    top: 60%;
+  }
+}
